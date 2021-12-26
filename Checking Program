@@ -26,7 +26,7 @@ public class (classname) {
         System.out.println("파이의 값을 정수로 버림하면"+secondquestion+"입니다.");
 
         //
-        // arguments 사용하기 : 강의에서 봤던거랑 다르게 띄어쓰기로 리스트 순서 구분
+        // arguments 사용하기 : 강의에서 봤던거랑 다르게 띄어쓰기로 배열 순서 구분
         //
         String age2= args[0];
         String name2 = args[1];
