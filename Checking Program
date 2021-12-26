@@ -1,0 +1,41 @@
+package com.company;
+import javax.swing.JOptionPane; //ShowInputDiaLog 사용에 필요함
+public class (classname) {
+    public static void main(String[] args){
+
+        //
+        // ShowInputDiaLog 사용하기
+        //
+        System.out.println("\n ~~ 설문조사 하기 ~~ \n");
+
+        String age = JOptionPane.showInputDialog("Enter Your age, please?");
+        //Integer age = 32 ; // 직접 만질?때는 이렇게
+        System.out.println("제 나이는 "+age+"살 입니다.\n");
+
+        String name = JOptionPane.showInputDialog("Enter Your name, please?");
+        //String name = "함필규" ; // 직접 만질?때는 이렇게
+        System.out.println("제 이름은 "+name+" 입니다.\n");
+
+        String hobby = JOptionPane.showInputDialog("Enter Your hobby, please?");
+        //String name = "강릉함씨 32대손인 사실을 자랑하기" ; // 직접 만질?때는 이렇게
+        System.out.println("제 취미는... \n"+hobby+" 입니다. \n");
+
+        String firstquestion = JOptionPane.showInputDialog("What's Pie rounded up?");
+        System.out.println("파이의 값을 정수로 올림하면"+firstquestion+"입니다.");
+        String secondquestion = JOptionPane.showInputDialog("What's Pie rounded off?");
+        System.out.println("파이의 값을 정수로 버림하면"+secondquestion+"입니다.");
+
+        //
+        // arguments 사용하기 : 강의에서 봤던거랑 다르게 띄어쓰기로 리스트 순서 구분
+        //
+        String age2= args[0];
+        String name2 = args[1];
+        String hobby2 = args[2];
+
+        System.out.println("\n ~~ 모범 답안 ~~ \n");
+        System.out.println("제 나이는 "+age2+"살 입니다.\n");
+        System.out.println("제 이름은 "+name2+" 입니다.\n");
+        System.out.println("제 취미는 "+hobby2+" 입니다. \n");
+
+        System.out.println("파이의 값을 정수로 올림하면 "+Math.floor(Math.PI)+"입니다.");
+        System.out.println("파이의 값을 정수로 버림하면 "+Math.ceil(Math.PI)+"입니다.");
